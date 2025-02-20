@@ -36,14 +36,14 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 relative">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-orange-50 relative">
       <div className="absolute inset-0 bg-grid-slate-900/[0.04] -z-1 fixed"></div>
       
       {/* Hero Section with Introduction */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
         <div className={`container mx-auto px-6 py-16 text-center relative ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
           <div className="relative inline-block mb-8">
-            <div className="absolute inset-0 bg-indigo-500 rounded-full opacity-10 blur-lg transform scale-110"></div>
+            <div className="absolute inset-0 bg-orange-500 rounded-full opacity-10 blur-lg transform scale-110"></div>
             <img
               src={profile.image}
               alt={profile.name}
@@ -51,7 +51,7 @@ function App() {
             />
           </div>
           <h1 className="text-5xl font-bold text-gray-900 mb-4 tracking-tight">{profile.name}</h1>
-          <p className="text-xl text-indigo-600 font-medium mb-6">{profile.role}</p>
+          <p className="text-xl text-orange-600 font-medium mb-6">{profile.role}</p>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-8 leading-relaxed">{profile.intro}</p>
           
           {/* Contact Buttons */}
@@ -97,7 +97,7 @@ function App() {
               href={profile.contact.calendly}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-all hover:scale-105 shadow-lg hover:shadow-xl"
+              className="inline-flex items-center px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-all hover:scale-105 shadow-lg hover:shadow-xl"
             >
               <Calendar className="w-5 h-5 mr-2" />
               Schedule Meeting
@@ -113,13 +113,13 @@ function App() {
                 className="w-full flex items-center justify-between mb-8 group"
               >
                 <div className="flex items-center">
-                  <HelpCircle className="w-6 h-6 text-indigo-600 mr-2" />
+                  <HelpCircle className="w-6 h-6 text-orange-600 mr-2" />
                   <h2 className="text-2xl font-bold text-gray-900">Quick Questions</h2>
                 </div>
                 {isQAVisible ? (
-                  <ChevronUp className="w-6 h-6 text-gray-500 group-hover:text-indigo-600 transition-colors" />
+                  <ChevronUp className="w-6 h-6 text-gray-500 group-hover:text-orange-600 transition-colors" />
                 ) : (
-                  <ChevronDown className="w-6 h-6 text-gray-500 group-hover:text-indigo-600 transition-colors" />
+                  <ChevronDown className="w-6 h-6 text-gray-500 group-hover:text-orange-600 transition-colors" />
                 )}
               </button>
               <div className={`space-y-4 transition-all duration-300 ease-in-out overflow-hidden ${isQAVisible ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}>
@@ -156,13 +156,13 @@ function App() {
                 className="w-full flex items-center justify-between mb-8 group"
               >
                 <div className="flex items-center">
-                  <FolderGit2 className="w-6 h-6 text-indigo-600 mr-2" />
+                  <FolderGit2 className="w-6 h-6 text-orange-600 mr-2" />
                   <h2 className="text-2xl font-bold text-gray-900">Case Studies</h2>
                 </div>
                 {isCaseStudiesVisible ? (
-                  <ChevronUp className="w-6 h-6 text-gray-500 group-hover:text-indigo-600 transition-colors" />
+                  <ChevronUp className="w-6 h-6 text-gray-500 group-hover:text-orange-600 transition-colors" />
                 ) : (
-                  <ChevronDown className="w-6 h-6 text-gray-500 group-hover:text-indigo-600 transition-colors" />
+                  <ChevronDown className="w-6 h-6 text-gray-500 group-hover:text-orange-600 transition-colors" />
                 )}
               </button>
               <div className={`transition-all duration-300 ease-in-out overflow-hidden ${isCaseStudiesVisible ? 'max-h-[5000px] opacity-100' : 'max-h-0 opacity-0'}`}>
@@ -207,7 +207,7 @@ function App() {
             {/* Contact Section */}
             <div className="glass-effect rounded-xl shadow-lg p-8">
               <div className="flex items-center mb-8">
-                <Mail className="w-6 h-6 text-indigo-600 mr-2" />
+                <Mail className="w-6 h-6 text-orange-600 mr-2" />
                 <h2 className="text-2xl font-bold text-gray-900">Get in Touch</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -252,7 +252,7 @@ function App() {
                   href={profile.contact.calendly}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 bg-indigo-600 text-white p-4 rounded-lg hover:bg-indigo-700 transition-all hover:scale-105 shadow-lg hover:shadow-xl"
+                  className="flex items-center justify-center gap-2 bg-orange-600 text-white p-4 rounded-lg hover:bg-orange-700 transition-all hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   <Calendar className="w-5 h-5" />
                   <span>Schedule a Call</span>
