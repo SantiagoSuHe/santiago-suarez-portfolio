@@ -84,7 +84,7 @@ function App() {
             </button>
 
             <a
-              href={`https://wa.me/${profile.contact.whatsapp}`}
+              href={profile.contact.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-[#25D366] text-white rounded-lg hover:bg-[#128C7E] transition-all hover:scale-105 shadow-lg hover:shadow-xl"
