@@ -26,7 +26,7 @@ export const caseStudies = [
   {
     title: "Enhancing LTI Integration in Open edX",
     objective: "Improve the integration and management of LTI components in Open edX.",
-    approach: "I led the development of an LTI-based product, tackling technical and design challenges to ensure the solution was effective for various types of clients, including Harvard. The project was a success, and a first iteration was sold to Axim.org for over $40,000",
+    approach: "I led the development of an LTI-based product, tackling technical and design challenges to ensure the solution was effective for various types of clients, including Harvard. The project was a success, and the first iteration was implemented by Axim.org, strengthening our collaboration and validating the product’s value in real-world scenarios.",
     image: "https://res.cloudinary.com/du5i6ansa/image/upload/v1740019498/Project5_g0ferf.png"
   },
   {
